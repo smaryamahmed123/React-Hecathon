@@ -15,7 +15,7 @@ import {  getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { addCounter } from '../store/slices/CountSlice';
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
+import { addCart, removeAddToCart } from "../store/slices/CartSlice"
 const DetailedPg = () => {
   const { id } = useParams();
   const dispatch = useDispatch()
